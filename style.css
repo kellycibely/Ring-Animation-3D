@@ -5,40 +5,50 @@
     font-family: monospace;
 }
 
+@font-face {
+    font-family: lordofthering;
+    src: url(Elvencommonspeak-0WXz.ttf);
+}
+  
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #673ac7;
+    background: #191e38;
     width: 100%;
 }
 
 .circle {
     transform-style: preserve-3d;
-    animation: animate 8s linear infinite;
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
 }
 
-@keyframes animate {
-    0% {
-        transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
-    }
-    100% {
-        transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
-    }
-}
 
 .circle .char {
+    /* font-family: lordofthering; */
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff;
-    color: #35146f;
+    background: #ff005e;
+    color: #fff;
     font-size: 4em;
     padding: 5px 12px;
-    border-top: 4px solid #35146f;
-    border-bottom: 4px solid #35146f;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
     transform-style: preserve-3d;
     transform-origin: center;
     transform: rotateY(calc(var(--char-index) * 12deg))translateZ(250px);
+    text-shadow: 500px 150px 0 rgba(255, 255, 255, 0.5),
+    300px 150px 10px rgba(255, 255, 255, 0.5),
+    150px 600px 0 rgba(255, 255, 255, 0.5),
+    600px 50px 0 rgba(255, 255, 255, 0.5),
+    400px 350px 0 rgba(255, 255, 255, 0.5),
+    200px 500px 0 rgba(255, 255, 255, 0.5),
+    500px -150px 0 rgba(255, 255, 255, 0.5),
+    300px -150px 10px rgba(255, 255, 255, 0.5),
+    150px -600px 0 rgba(255, 255, 255, 0.5),
+    600px -50px 0 rgba(255, 255, 255, 0.5),
+    400px -350px 0 rgba(255, 255, 255, 0.5),
+    200px -500px 0 rgba(255, 255, 255, 0.5);
 }
