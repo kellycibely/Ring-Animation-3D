@@ -9,13 +9,13 @@
     font-family: lordofthering;
     src: url(Elvencommonspeak-0WXz.ttf);
 }
-  
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #191e38;
+    background: #131711;
     width: 100%;
 }
 
@@ -24,31 +24,29 @@ body {
     transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
 }
 
-
 .circle .char {
     /* font-family: lordofthering; */
     position: absolute;
+    /* height: 150px; */
+    border: 1px solid;
+    /* color: red; */
+    /* border-radius: 50%; */
+
     top: 0;
     left: 0;
-    background: #ff005e;
-    color: #fff;
+    background: rgb(83, 36, 36);
+    color: rgb(24, 5, 4);
     font-size: 4em;
     padding: 5px 12px;
-    border-top: 15px solid #fff;
-    border-bottom: 15px solid #fff;
+    border-top: 15px solid rgb(24, 5, 4);
+    border-bottom: 15px solid rgb(24, 5, 4);
     transform-style: preserve-3d;
     transform-origin: center;
-    transform: rotateY(calc(var(--char-index) * 12deg))translateZ(250px);
-    text-shadow: 500px 150px 0 rgba(255, 255, 255, 0.5),
-    300px 150px 10px rgba(255, 255, 255, 0.5),
-    150px 600px 0 rgba(255, 255, 255, 0.5),
-    600px 50px 0 rgba(255, 255, 255, 0.5),
-    400px 350px 0 rgba(255, 255, 255, 0.5),
-    200px 500px 0 rgba(255, 255, 255, 0.5),
-    500px -150px 0 rgba(255, 255, 255, 0.5),
-    300px -150px 10px rgba(255, 255, 255, 0.5),
-    150px -600px 0 rgba(255, 255, 255, 0.5),
-    600px -50px 0 rgba(255, 255, 255, 0.5),
-    400px -350px 0 rgba(255, 255, 255, 0.5),
-    200px -500px 0 rgba(255, 255, 255, 0.5);
+    transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
+    text-shadow: 500px 150px 0 rgba(29, 139, 53, 0.5), 300px 150px 10px rgba(0, 255, 0, 0.5),
+        150px 600px 0 rgba(122, 255, 104, 0.5), 600px 50px 0 rgba(108, 255, 71, 0.801),
+        400px 350px 0 rgba(14, 99, 11, 0.623), 200px 500px 0 rgba(108, 255, 71, 0.8),
+        500px -150px 0 rgba(29, 139, 53, 0.5), 300px -150px 10px rgba(51, 151, 26, 0.507),
+        150px -600px 0 rgba(122, 255, 104, 0.5), 600px -50px 0 rgba(70, 187, 41, 0.534),
+        400px -350px 0 rgba(14, 99, 11, 0.623), 200px -500px 0 rgba(108, 255, 71, 0.8);
 }
